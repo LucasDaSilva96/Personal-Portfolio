@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400&family=Inter:wght@300;400;700&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--black);
+  min-height: 100vh;
+}
+
+:root {
+  --black: #000000;
+  --dark-grey: #1a1a1a;
+  --white: #eeeeee;
+  --blue: #068fff;
+  --purple: #4e4feb;
+}
+
+header {
+  padding: 5px;
+}
+
+.selected-lang {
+  cursor: pointer;
+  color: var(--white);
+}
+
+.lang-menu {
+  max-width: 70px;
+}
+
+.lang-menu ul li,
+.selected-lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lang-menu ul {
+  background-color: var(--white);
+}
+
+.selected-lang a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.selected-lang {
+  padding-left: 2px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.eng,
+.swe,
+.nor {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.flag-box {
+  max-width: 27px;
+  max-height: 21px;
+}
+
+.lang-menu {
+  border: 1px solid var(--white);
+}
+
+/* Reusable classes */
+.hidden {
+  display: none;
+}

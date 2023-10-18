@@ -8,7 +8,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Portfolio",
-      favicon: "./src/img-icons/favIcon.png",
+      favicon: "./img-icons/favIcon.png",
+      template: "template.html",
     }),
   ],
   output: {
