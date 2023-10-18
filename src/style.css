@@ -51,7 +51,7 @@ nav {
 .lang-menu ul {
   background-color: var(--white);
   position: absolute;
-  width: 64px;
+  width: 60px;
 }
 
 .selected-lang a {
