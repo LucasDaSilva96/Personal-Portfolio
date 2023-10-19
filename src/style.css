@@ -7,11 +7,13 @@
 
 html {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--black);
   min-height: 100vh;
+  position: relative;
 }
 
 :root {
@@ -27,12 +29,13 @@ header {
 }
 
 nav {
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
-  font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 18px;
+  background-color: var(--black);
   backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
     brightness(140%);
@@ -45,13 +48,18 @@ nav {
   display: flex;
   align-items: center;
   gap: 5px;
-  max-width: 59px;
+  max-width: 80px;
 }
 
 .lang-menu ul {
   background-color: var(--white);
   position: absolute;
-  width: 60px;
+  max-width: 80px;
+  margin-top: 10px;
+  margin-left: -8px;
+  padding: 8px;
+  height: 130px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .selected-lang a {
@@ -68,6 +76,7 @@ nav {
 
 ul li {
   list-style: none;
+  line-height: 2;
 }
 
 .eng,
@@ -84,6 +93,10 @@ ul li {
 
 .lang-menu {
   border: 1px solid var(--white);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 8px;
+  max-width: 80px;
 }
 
 .sections-container {
@@ -99,7 +112,7 @@ ul li {
   color: var(--white);
   transition: all 0.3s linear;
   border-bottom: 1px solid transparent;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .nav:hover {
@@ -114,15 +127,32 @@ ul li {
   gap: 10px;
 }
 
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+
+.nav-icon:hover {
+  border-color: var(--blue);
+}
+
 .lets-talk-btn {
   background-color: transparent;
-  font-size: 14px;
-  padding: 4px;
+  font-size: 16px;
+  padding: 8px;
   color: var(--white);
   border-radius: 5px;
   border: 1px solid var(--white);
   cursor: pointer;
   transition: all 0.3s linear;
+}
+
+.lets-talk-btn:hover {
+  color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 .col {
@@ -198,10 +228,85 @@ ul li {
   transform: translateY(-13px) rotate(90deg);
 }
 
-.lets-talk-btn:hover {
-  color: var(--blue);
-  border: 1px solid var(--blue);
+iframe {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 }
+
+.hero-txt-container {
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  color: var(--white);
+}
+
+.hero-h4 {
+  font-weight: 300;
+  color: var(--purple);
+  font-size: 22px;
+}
+
+.hero-h1 {
+  color: var(--white);
+  font-size: 62px;
+  font-weight: 600;
+}
+
+.name {
+  font-weight: bolder;
+  color: var(--blue);
+  -webkit-text-stroke: 2px var(--black);
+}
+
+/******* Loader *******/
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.spinner-box {
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(0%, -50%);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.circle-border {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(63, 249, 220);
+  background: linear-gradient(
+    0deg,
+    rgba(63, 249, 220, 0.1) 33%,
+    rgba(63, 249, 220, 1) 100%
+  );
+  animation: spin 0.8s linear 0s infinite;
+}
+
+.circle-core {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+/* ********************* */
 
 /* Reusable classes */
 .hidden {
@@ -209,7 +314,7 @@ ul li {
 }
 
 /* Media Queries */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .sections-container,
   .contact-nav-container {
     display: none;
