@@ -30,9 +30,9 @@ header {
 
 nav {
   z-index: 1000;
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
   align-items: center;
-  justify-content: space-evenly;
   padding: 20px;
   font-size: 18px;
   background-color: var(--black);
@@ -40,7 +40,7 @@ nav {
   -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
     brightness(140%);
   position: fixed;
-  width: 100vw;
+  min-width: 100vw;
 }
 
 .lang-menu ul li,
@@ -103,7 +103,7 @@ ul li {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-left: auto;
+  transition: all 0.3s linear;
 }
 
 .nav {
@@ -167,6 +167,7 @@ ul li {
 
 .three {
   display: none;
+  margin-left: auto;
 }
 
 .row .three {
@@ -271,10 +272,9 @@ iframe {
 }
 .spinner-box {
   /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(0%, -50%);
+  float: right;
+  margin-top: 15%;
+  margin-right: 30%;
   width: 300px;
   height: 300px;
   display: flex;
@@ -306,6 +306,9 @@ iframe {
   background-color: var(--black);
   border-radius: 50%;
 }
+.lang-menu {
+  margin-right: auto;
+}
 /* ********************* */
 
 /* Reusable classes */
@@ -314,17 +317,51 @@ iframe {
 }
 
 /* Media Queries */
-@media (max-width: 750px) {
-  .sections-container,
-  .contact-nav-container {
-    display: none;
+@media (max-width: 950px) {
+  header {
+    position: relative;
+  }
+  .sections-container {
+    z-index: 540;
+    top: 0%;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--black);
+    transform: translate(1200px);
   }
 
+  .contact-nav-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    padding: 0 50px;
+  }
   .three {
+    z-index: 550;
     display: block;
   }
 
-  .lang-menu {
-    margin-right: auto;
+  .spinner-box {
+    margin-top: 25%;
+  }
+}
+
+.show-menu {
+  transform: translate(0px);
+}
+
+@media (max-width: 650px) {
+  .spinner-box {
+    margin-top: 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  .spinner-box {
+    margin-top: 45%;
   }
 }
