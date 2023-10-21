@@ -17,7 +17,6 @@ export function nextSlide() {
     }
     projectBox.style.transform = `translateX(-${COUNTER}px)`;
     prev.classList.remove("hidden");
-    console.log(COUNTER);
   });
 }
 
