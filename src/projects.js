@@ -9,7 +9,7 @@ const MAX = scrollContainer.scrollWidth;
 
 export function nextSlide() {
   next.addEventListener("click", () => {
-    if (COUNTER + image_width < MAX - 205) {
+    if (COUNTER + image_width < MAX - image_width * 3) {
       COUNTER += image_width;
     } else {
       next.classList.add("hidden");

@@ -13,3 +13,17 @@ hideNav();
 nextSlide();
 prevSlide();
 formAction();
+
+const hero_section = document.getElementById("hero-sec");
+const contact_section = document.getElementById("contact-sec");
+
+const letsTalkBtn = document.querySelector(".lets-talk-btn");
+const scrollUpBtn = document.querySelector(".up-icon-box");
+
+letsTalkBtn.addEventListener("click", () => {
+  contact_section.scrollIntoView();
+});
+
+scrollUpBtn.addEventListener("click", () => {
+  hero_section.scrollIntoView();
+});

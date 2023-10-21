@@ -13,6 +13,11 @@ export function hideNav() {
       hamburger.classList.toggle("is-active");
     });
   });
+  const letsTalkBtn = document.querySelector(".lets-talk-btn");
+  letsTalkBtn.addEventListener("click", () => {
+    sectionsNavContainer.classList.toggle("show-menu");
+    hamburger.classList.toggle("is-active");
+  });
 }
 
 export function renderLangList() {
