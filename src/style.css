@@ -383,6 +383,7 @@ iframe {
 }
 
 #portfolio-sec {
+  background-color: var(--dark-grey);
   position: relative;
   margin-top: 100px;
   display: flex;
@@ -394,7 +395,7 @@ iframe {
 #portfolio-h3 {
   position: absolute;
   color: var(--white);
-  top: 0px;
+  top: 10px;
   font-size: 48px;
   border-bottom: 1px solid var(--white);
 }
@@ -486,6 +487,81 @@ iframe {
   top: 32%;
   right: 3%;
 }
+
+#contact-sec {
+  margin-top: -200px;
+  position: relative;
+}
+
+#contact-h2 {
+  z-index: 40;
+  font-size: 42px;
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+  font-weight: 800;
+  position: absolute;
+  top: 2%;
+  left: 10%;
+}
+
+#contact-p {
+  z-index: 39;
+  font-size: 22px;
+  color: var(--white);
+  position: absolute;
+  top: 12%;
+  left: 2%;
+}
+
+form {
+  z-index: 55;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  gap: 30px;
+  backdrop-filter: blur(10px);
+}
+
+input {
+  color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid var(--blue);
+}
+
+textarea {
+  resize: none;
+  border: 2px solid var(--blue);
+  background-color: rgba(245, 245, 245, 0.2);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.send-btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white);
+  width: 80%;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.send-btn:active {
+  background-color: var(--white);
+  color: var(--black);
+  transform: scale(1.05);
+}
+
 /* ********************* */
 
 /* Reusable classes */
@@ -545,6 +621,9 @@ iframe {
 }
 
 @media (max-width: 875px) {
+  .hero-h1 {
+    font-size: 52px;
+  }
   #about-h1 {
     font-size: 26px;
   }
@@ -581,6 +660,9 @@ iframe {
 }
 
 @media (max-width: 550px) {
+  #contact-p {
+    font-size: 16px;
+  }
   .skill-icons-box svg {
     max-width: 36px;
     max-height: 36px;
@@ -601,6 +683,17 @@ iframe {
 }
 
 @media (max-width: 450px) {
+  #contact-h2 {
+    left: 30%;
+  }
+  #contact-p {
+    left: 10%;
+  }
+  form {
+    left: 10%;
+    width: 300px;
+    height: 400px;
+  }
   .skill-icons-box svg {
     max-width: 26px;
     max-height: 26px;
