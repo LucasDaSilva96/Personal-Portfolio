@@ -12,7 +12,7 @@ module.exports = {
       template: "template.html",
     }),
     new FaviconsWebpackPlugin({
-      logo: "./img-icons/favIcon.png",
+      logo: "./src/img-icons/favIcon.png",
     }),
   ],
   output: {
