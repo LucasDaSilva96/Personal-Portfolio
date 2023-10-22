@@ -1,18 +1,18 @@
-const heroIframe = document.getElementById("hero-spline");
 const loader = document.querySelector(".spinner-box");
-export async function renderHeroSpline() {
-  try {
-    const URL = await fetch(
-      "https://my.spline.design/theorbhand-70f9471499959493b0b4fdb1d489a7f6/"
-    );
+const hero_video = document.getElementById("hero-video");
 
-    heroIframe.src = `${URL.url}`;
+export function renderHeroSpline() {
+  setTimeout(() => {
+    hero_video.classList.remove("hidden");
+    loader.classList.add("hidden");
+  }, 3000);
+}
 
-    setTimeout(() => {
-      heroIframe.classList.remove("hidden");
-      loader.classList.add("hidden");
-    }, 3000);
-  } catch (error) {
-    console.error(error);
-  }
+const contact_video = document.getElementById("contact-video");
+const contactLoader = document.querySelector(".loading");
+export function renderContactSpline() {
+  setTimeout(() => {
+    contact_video.classList.remove("hidden");
+    contactLoader.classList.add("hidden");
+  }, 3000);
 }
