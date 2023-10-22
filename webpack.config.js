@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: "./src/index.js",
   devtool: "inline-source-map",
   plugins: [
@@ -25,6 +25,10 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: "html-loader",
+      },
+      {
+        test: /\.mp4$/,
+        use: "file-loader?name=[name].[ext]",
       },
       {
         test: /\.(?:js|mjs|cjs)$/,

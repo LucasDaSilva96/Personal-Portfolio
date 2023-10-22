@@ -15,6 +15,9 @@ window.addEventListener("DOMContentLoaded", () => {
       translate(box.id);
     });
   });
+
+  document.querySelectorAll("source")[0].src = "./the-orb-hand.mp4";
+  document.querySelectorAll("source")[1].src = "./cybernetic-human.mp4";
 });
 
 renderHamburger();
