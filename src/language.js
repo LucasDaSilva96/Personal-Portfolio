@@ -184,7 +184,7 @@ export function translate(lang) {
     contact_p.textContent = ENG.contact_p;
     contact_form_name.placeholder = ENG.contact_form_name;
     contact_form_phone.placeholder = ENG.contact_form_phone;
-    contact_form_email.placeholder = ENG.contact_form_name;
+    contact_form_email.placeholder = ENG.contact_form_email;
     contact_form_send.textContent = ENG.contact_form_send;
 
     footer_h5.textContent = ENG.footer_h5;
@@ -224,7 +224,7 @@ export function translate(lang) {
     contact_h2.style.fontSize = "32px";
     contact_form_name.placeholder = SWE.contact_form_name;
     contact_form_phone.placeholder = SWE.contact_form_phone;
-    contact_form_email.placeholder = SWE.contact_form_name;
+    contact_form_email.placeholder = SWE.contact_form_email;
     contact_form_send.textContent = SWE.contact_form_send;
 
     footer_h5.textContent = SWE.footer_h5;
@@ -263,7 +263,7 @@ export function translate(lang) {
     contact_p.textContent = NOR.contact_p;
     contact_form_name.placeholder = NOR.contact_form_name;
     contact_form_phone.placeholder = NOR.contact_form_phone;
-    contact_form_email.placeholder = NOR.contact_form_name;
+    contact_form_email.placeholder = NOR.contact_form_email;
     contact_form_send.textContent = NOR.contact_form_send;
 
     footer_h5.textContent = NOR.footer_h5;
