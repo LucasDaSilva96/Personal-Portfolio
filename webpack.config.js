@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.mp4$/,
-        use: "file-loader?name=[name].[ext]",
+        loader: "file-loader",
       },
       {
         test: /\.(?:js|mjs|cjs)$/,

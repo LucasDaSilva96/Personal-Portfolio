@@ -1,18 +1,18 @@
 const loader = document.querySelector(".spinner-box");
-const hero_video = document.getElementById("hero-video");
+const hero_bg = document.querySelector(".background-hero");
 
 export function renderHeroSpline() {
   setTimeout(() => {
-    hero_video.classList.remove("hidden");
+    hero_bg.classList.remove("hidden");
     loader.classList.add("hidden");
   }, 3000);
 }
 
-const contact_video = document.getElementById("contact-video");
+const contact_bg = document.querySelector(".background-contact");
 const contactLoader = document.querySelector(".loading");
 export function renderContactSpline() {
   setTimeout(() => {
-    contact_video.classList.remove("hidden");
+    contact_bg.classList.remove("hidden");
     contactLoader.classList.add("hidden");
   }, 3000);
 }
