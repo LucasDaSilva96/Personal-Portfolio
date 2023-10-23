@@ -1,2 +1,2 @@
 # Personal-Portfolio
-This is my first Personal Portfolio website
+A personal portfolio website. The site is designed to showcase my skills, projects, and contact information. It features a navigation menu, sections for the home, about, showcase, and contact, and icons denoting main skills, including front-end development, HTML, CSS, JavaScript, Git, Webpack, and design. The portfolio serves as a window into my journey to becoming a full-stack developer, highlighting his dedication to creating user-friendly websites and bringing dynamic, data-driven web applications to life. Visitors can connect with me through LinkedIn and GitHub or get in touch via the "LET'S TALK" button. The website design demonstrates a strong focus on clean aesthetics and an organized structure.
