@@ -81,7 +81,7 @@ const SWE = {
   about_nav: "Om",
   portfolio_nav: "Projekt",
   contact_nav: "Kontakt",
-  letsTalk_nav: "Låt oss prata",
+  letsTalk_nav: "LÅT OSS PRATA",
   // *************************
   hero_box: `<h4 class="hero-h4">Front-End-Utvecklare</h4>
    <h1 class="hero-h1">
@@ -191,7 +191,7 @@ export function translate(lang) {
     footer_h1.textContent = ENG.footer_h1;
     footer_quickLinks_h6.textContent = ENG.footer_quickLinks_h6;
     footer_home_nav.textContent = ENG.footer_home_nav;
-    footer_about_nav.textContent = ENG.footer_home_nav;
+    footer_about_nav.textContent = ENG.footer_about_nav;
     footer_portfolio_nav.textContent = ENG.footer_portfolio_nav;
     footer_sayHello_h6.textContent = ENG.footer_sayHello_h6;
   }
@@ -231,7 +231,7 @@ export function translate(lang) {
     footer_h1.textContent = SWE.footer_h1;
     footer_quickLinks_h6.textContent = SWE.footer_quickLinks_h6;
     footer_home_nav.textContent = SWE.footer_home_nav;
-    footer_about_nav.textContent = SWE.footer_home_nav;
+    footer_about_nav.textContent = SWE.footer_about_nav;
     footer_portfolio_nav.textContent = SWE.footer_portfolio_nav;
     footer_sayHello_h6.textContent = SWE.footer_sayHello_h6;
   }
@@ -270,7 +270,7 @@ export function translate(lang) {
     footer_h1.textContent = NOR.footer_h1;
     footer_quickLinks_h6.textContent = NOR.footer_quickLinks_h6;
     footer_home_nav.textContent = NOR.footer_home_nav;
-    footer_about_nav.textContent = NOR.footer_home_nav;
+    footer_about_nav.textContent = NOR.footer_about_nav;
     footer_portfolio_nav.textContent = NOR.footer_portfolio_nav;
     footer_sayHello_h6.textContent = NOR.footer_sayHello_h6;
   }
